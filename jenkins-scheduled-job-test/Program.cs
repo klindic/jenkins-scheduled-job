@@ -5,9 +5,6 @@ using System.Threading.Tasks;
 
 class Program
 {
-    // Make sure to replace this with your SendGrid API Key
-    private const string SendGridApiKey = "api key";
-
     static async Task Main(string[] args)
     {
         // Assume we're cancelling an order in this example
@@ -29,7 +26,8 @@ class Program
     // Method to send email using SendGrid
     private static async Task SendNotificationAsync()
     {
-        var client = new SendGridClient(SendGridApiKey);
+        var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+        var client = new SendGridClient(apiKey);
         var from = new EmailAddress("test@example.com", "Example User");
         var subject = "Cancellation Notice";
         var to = new EmailAddress("kristijanklindic@gmail.com", "Example User");
