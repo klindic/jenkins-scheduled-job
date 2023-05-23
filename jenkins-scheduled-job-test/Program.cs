@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 class Program
 {
     // Make sure to replace this with your SendGrid API Key
-    private const string SendGridApiKey = "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";
+    private const string SendGridApiKey = "api key";
 
     static async Task Main(string[] args)
     {
