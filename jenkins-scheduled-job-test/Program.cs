@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 class Program
 {
     // Make sure to replace this with your SendGrid API Key
-    private const string SendGridApiKey = "your-sendgrid-api-key";
+    private const string SendGridApiKey = "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";
 
     static async Task Main(string[] args)
     {
@@ -32,7 +32,7 @@ class Program
         var client = new SendGridClient(SendGridApiKey);
         var from = new EmailAddress("test@example.com", "Example User");
         var subject = "Cancellation Notice";
-        var to = new EmailAddress("test@example.com", "Example User");
+        var to = new EmailAddress("kristijanklindic@gmail.com", "Example User");
         var plainTextContent = "Hello, this is to notify you that your order has been cancelled.";
         var htmlContent = "<strong>Hello, this is to notify you that your order has been cancelled.</strong>";
         var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
