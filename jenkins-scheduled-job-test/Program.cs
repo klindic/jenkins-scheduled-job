@@ -7,6 +7,7 @@ class Program
 {
     static async Task Main(string[] args)
     {
+        // Assume we're cancelling an order in this example
         bool isOrderCancelled = CancelOrder(123);
 
         if (isOrderCancelled)
