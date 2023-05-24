@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>jenkins_scheduled_job_test</RootNamespace>
     <UserSecretsId>c700ee50-5eb7-4705-9660-a0867248f042</UserSecretsId>
   </PropertyGroup>
