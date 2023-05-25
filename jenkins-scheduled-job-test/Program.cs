@@ -33,7 +33,7 @@ class Program
     // Method to send email using SendGrid
     private static async Task SendNotificationAsync()
     {
-        string apiKey = Program.CONFIG["SendGrit:ApiKey"];
+        string apiKey = Program.CONFIG["SendGrid:ApiKey"];
         string fromEmailAddress = Program.CONFIG["SendGrid:FromEmailAddress"];
 
         var client = new SendGridClient(apiKey);
